@@ -26,3 +26,6 @@ docgen [options]
 ```
 
 `注意：`默认情况下，将为项目根目录下，满足该`src/components/**/src/index.tsx`路径的所有组件生成readme。
+
+### 组件编写规范说明
+请参考https://github.com/styleguidist/react-docgen-typescript/
