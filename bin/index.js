@@ -6,13 +6,14 @@ program
   .version(packageJson.version, '-v,--version')
   .option('-b, --base <baseName>', '指定根目录', 'src/components')
   .option('-d, --dir <dirName>', '指定react组件所在文件夹')
-  .option('-f, --file <fileName>', '指定react组件的文件名（包含后缀）');
+  .option('-f, --file <fileName>', '指定react组件的文件名（包含后缀）')
+  .option('-n, --name <compName>', '指定react组件名称');
 
 program.parse(process.argv);
 
 const options = program.opts();
 
-const { base, dir, file } = options;
+const { base, dir, file, name } = options;
 const path = require('path');
 const docgen = require('react-docgen-typescript');
 const markdown = require('react-docgen-typescript-markdown-render');
@@ -49,12 +50,13 @@ function genDoc(path, file = 'src/index.tsx') {
     if (fs.existsSync(componentFile)) {
       const options = {
         savePropValueAsString: true,
+        componentNameResolver: dir ? () => dir : undefined,
       };
       const content = docgen.parse(componentFile, options);
       const renderContent = markdown.markdownRender(content);
       try {
         fs.writeFileSync(componentDoc, renderContent);
-        spinner.succeed(`${componentFile}组件readme生成完成`)
+        spinner.succeed(`${componentFile}组件readme生成完成`);
       } catch (error) {
         spinner.fail(`${componentFile}组件：${err}`);
       }

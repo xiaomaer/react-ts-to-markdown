@@ -4,6 +4,6 @@ import { IColumnProps } from './interface'
 /**
  * Form column.
  */
-export function Column(props: IColumnProps) {
+export function Column2(props: IColumnProps) {
   return <div>{props.name || ''}</div>;
 }
