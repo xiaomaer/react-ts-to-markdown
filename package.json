@@ -1,0 +1,23 @@
+{
+  "name": "react-ts-to-markdown",
+  "version": "1.0.0",
+  "description": "根据react组件中，定义的ts属性类型自动生成readme",
+  "main": "index.js",
+  "bin": {
+    "docgen": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xm",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^3.0.0",
+    "ora": "^5.4.0",
+    "path": "^0.12.7",
+    "react-docgen-typescript": "^1.21.0",
+    "react-docgen-typescript-markdown-render": "^0.2.5",
+    "typescript": "^4.2.3"
+  }
+}
