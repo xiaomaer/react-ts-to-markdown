@@ -6,14 +6,13 @@ program
   .version(packageJson.version, '-v,--version')
   .option('-b, --base <baseName>', '指定根目录', 'src/components')
   .option('-d, --dir <dirName>', '指定react组件所在文件夹')
-  .option('-f, --file <fileName>', '指定react组件的文件名（包含后缀）')
-  .option('-n, --name <compName>', '指定react组件名称');
+  .option('-f, --file <fileName>', '指定react组件的文件名（包含后缀）');
 
 program.parse(process.argv);
 
 const options = program.opts();
 
-const { base, dir, file, name } = options;
+const { base, dir, file } = options;
 const path = require('path');
 const docgen = require('react-docgen-typescript');
 const markdown = require('react-docgen-typescript-markdown-render');
