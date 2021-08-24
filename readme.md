@@ -16,8 +16,8 @@ docgen 包括命令：
 -v,--version 命令行工具版本号
 -b,--base <baseName> 指定组件根目录，默认为`src/components`
 -d,--dir <dirName> 指定react组件所在文件夹，默认为`空`
--f,--file <fileName> 指定react组件的文件名（包含后缀）（根据react属性定义生成 readme），如：`src/index.tsx`
--t,--ts <fileName> 指定ts类型定义文件的文件名（包含后缀）（根据export类型定义生成readme），如：`src/interface.ts`
+-f,--file <fileName> 指定react组件的文件名（包含后缀）（根据react组件属性类型定义生成readme，生成的readme文件在组件根目录下），如：`src/index.tsx`
+-t,--ts <fileName> 指定ts类型定义文件的文件名（包含后缀）（根据ts文件export的类型定义生成readme，生成的readme文件与interfeac文件在同一目录下），如：`src/interface.ts`
 ```
 `注意：` `-f`与`-t`不能同时使用，当两者都存在时，-t生效
 
