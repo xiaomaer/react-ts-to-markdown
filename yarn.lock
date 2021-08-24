@@ -304,9 +304,9 @@ process@^0.11.1:
   resolved "https://registry.npm.taobao.org/process/download/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
-react-docgen-typescript-markdown-render@^0.2.5:
+react-docgen-typescript-markdown-render@0.2.5:
   version "0.2.5"
-  resolved "https://registry.npm.taobao.org/react-docgen-typescript-markdown-render/download/react-docgen-typescript-markdown-render-0.2.5.tgz#d3091fd7da1083dfcd460b889dee0763d58fd563"
+  resolved "https://registry.nlark.com/react-docgen-typescript-markdown-render/download/react-docgen-typescript-markdown-render-0.2.5.tgz#d3091fd7da1083dfcd460b889dee0763d58fd563"
   integrity sha1-0wkf19oQg9/NRguIne4HY9WP1WM=
   dependencies:
     mdast "^3.0.0"
@@ -319,9 +319,9 @@ react-docgen-typescript-markdown-render@^0.2.5:
     unist-builder "^2.0.3"
     y18n "^5.0.2"
 
-react-docgen-typescript@^1.20.4, react-docgen-typescript@^1.21.0:
+react-docgen-typescript@1.21.0, react-docgen-typescript@^1.20.4:
   version "1.21.0"
-  resolved "https://registry.npm.taobao.org/react-docgen-typescript/download/react-docgen-typescript-1.21.0.tgz#3385dde81b63eb1d54f86a935bd4f65f96c821f6"
+  resolved "https://registry.nlark.com/react-docgen-typescript/download/react-docgen-typescript-1.21.0.tgz#3385dde81b63eb1d54f86a935bd4f65f96c821f6"
   integrity sha1-M4Xd6Btj6x1U+GqTW9T2X5bIIfY=
 
 readable-stream@^3.4.0:
