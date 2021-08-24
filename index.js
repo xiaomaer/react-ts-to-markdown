@@ -1,3 +1,7 @@
+const path = require('path');
 const { genReactComp } = require('./utils/tsToReadme');
 
-genReactComp('/Users/mia/Documents/projects-me/react-ts-to-markdown/src/components/Column2','src/interface.ts');
+const root = process.cwd();
+const componentPath = path.resolve(root, 'src/components', 'Column2');
+
+genReactComp(componentPath,'src/interface.ts');
