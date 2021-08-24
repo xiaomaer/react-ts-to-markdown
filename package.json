@@ -1,6 +1,6 @@
 {
   "name": "react-ts-to-markdown",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "根据react组件中，定义的ts属性类型自动生成readme",
   "main": "index.js",
   "bin": {
