@@ -11,7 +11,7 @@ program
   .option('-b, --base <baseName>', '指定根目录', 'src/components')
   .option('-d, --dir <dirName>', '指定react组件所在文件夹', '')
   .option('-f, --file <fileName>', '指定react组件的文件名（包含后缀）')
-  .option('-t, --ts <filePath>', '根据ts文件类型定义生成readme');
+  .option('-t, --ts <filePath>', '根据ts文件类型定义生成readme（包含后缀）');
 
 program.parse(process.argv);
 
